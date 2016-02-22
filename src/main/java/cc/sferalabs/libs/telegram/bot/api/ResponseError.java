@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -24,7 +24,7 @@ package cc.sferalabs.libs.telegram.bot.api;
 public class ResponseError extends Exception {
 
 	/**
-	 * @param message
+	 * @param message the error message
 	 */
 	public ResponseError(String message) {
 		super(message);

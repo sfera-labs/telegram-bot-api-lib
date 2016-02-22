@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -70,14 +70,16 @@ public class TelegramBot {
 	}
 
 	/**
-	 * Sends a request to the server
+	 * Sends a request to the server.
 	 * 
+	 * @param <T>
+	 *            the class to cast the returned value to
 	 * @param request
 	 *            the request to be sent
 	 * @param timeout
 	 *            the read timeout value (in milliseconds) to be used for server
 	 *            response. A timeout of zero is interpreted as an infinite
-	 *            timeout.
+	 *            timeout
 	 * @return the JSON object representing the value of the field "result" of
 	 *         the response JSON object cast to the specified type parameter
 	 * @throws ResponseError

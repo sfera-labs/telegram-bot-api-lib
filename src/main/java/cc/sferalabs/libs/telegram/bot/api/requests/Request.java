@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,6 +30,7 @@ public abstract class Request {
 
 	/**
 	 * @param methodName
+	 *            the method name
 	 */
 	public Request(String methodName) {
 		this.methodName = methodName;
@@ -43,16 +44,19 @@ public abstract class Request {
 	}
 
 	/**
-	 * @return
+	 * @return the parameters map
 	 */
 	public Map<String, String> getParameters() {
 		return parameters;
 	}
 
 	/**
+	 * Adds the specified parameter.
 	 * 
 	 * @param name
+	 *            the parameter name
 	 * @param value
+	 *            the parameter value
 	 */
 	protected void addParameter(String name, Object value) {
 		if (value == null) {

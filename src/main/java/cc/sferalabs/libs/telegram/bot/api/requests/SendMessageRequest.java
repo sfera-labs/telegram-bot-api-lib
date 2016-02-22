@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -27,10 +27,17 @@ public class SendMessageRequest extends Request {
 	/**
 	 * 
 	 * @param chatId
+	 *            the chat_id parameter
 	 * @param text
+	 *            the text parameter
+	 * @param parseMode
+	 *            the parse_mode parameter
 	 * @param disableWebPagePreview
+	 *            the disable_web_page_preview parameter
 	 * @param replyToMessageId
+	 *            the reply_to_message_id parameter
 	 * @param replyMarkup
+	 *            the reply_markup parameter
 	 */
 	public SendMessageRequest(int chatId, String text, String parseMode,
 			Boolean disableWebPagePreview, Integer replyToMessageId, ReplyMarkup replyMarkup) {

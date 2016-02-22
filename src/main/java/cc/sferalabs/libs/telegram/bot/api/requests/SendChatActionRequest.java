@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -34,7 +34,9 @@ public class SendChatActionRequest extends Request {
 	/**
 	 * 
 	 * @param chatId
+	 *            the chat_id parameter
 	 * @param action
+	 *            the action parameter
 	 */
 	public SendChatActionRequest(int chatId, String action) {
 		super("sendChatAction");

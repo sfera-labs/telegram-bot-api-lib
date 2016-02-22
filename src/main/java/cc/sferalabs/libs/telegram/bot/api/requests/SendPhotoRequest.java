@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -28,10 +28,15 @@ public class SendPhotoRequest extends SendFileRequest {
 
 	/**
 	 * @param chatId
+	 *            the chat_id parameter
 	 * @param path
+	 *            the path of the file to send
 	 * @param caption
+	 *            the caption parameter
 	 * @param replyToMessageId
+	 *            the reply_to_message_id parameter
 	 * @param replyMarkup
+	 *            the reply_markup parameter
 	 */
 	public SendPhotoRequest(int chatId, Path path, String caption, Integer replyToMessageId,
 			ReplyMarkup replyMarkup) {

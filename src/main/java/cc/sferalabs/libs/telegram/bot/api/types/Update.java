@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -27,7 +27,7 @@ public class Update extends Type {
 	/**
 	 * Constructs an Update object from the passed JSON object
 	 * 
-	 * @param obj
+	 * @param obj the JSON object
 	 */
 	public Update(JSONObject obj) {
 		super(obj);

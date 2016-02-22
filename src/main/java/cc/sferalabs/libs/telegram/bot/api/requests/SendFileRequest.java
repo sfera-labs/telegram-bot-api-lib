@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -32,11 +32,17 @@ public abstract class SendFileRequest extends Request {
 	/**
 	 * 
 	 * @param methodName
+	 *            the method name
 	 * @param chatId
+	 *            the chat_id parameter
 	 * @param path
+	 *            the path of the file to send
 	 * @param parameter
+	 *            the name of the parameter identifying the file type
 	 * @param replyToMessageId
+	 *            the reply_to_message_id parameter
 	 * @param replyMarkup
+	 *            the reply_markup parameter
 	 */
 	public SendFileRequest(String methodName, int chatId, Path path, String parameter,
 			Integer replyToMessageId, ReplyMarkup replyMarkup) {
@@ -49,14 +55,14 @@ public abstract class SendFileRequest extends Request {
 	}
 
 	/**
-	 * @return
+	 * @return the file path
 	 */
 	public Path getFilePath() {
 		return path;
 	}
 
 	/**
-	 * @return
+	 * @return the name of the parameter identifying the file type
 	 */
 	public String getFileParamName() {
 		return parameter;

@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2014-2015 Sfera Labs, a division of Home Systems Consulting S.p.A.
+ * Copyright (C) 2014-2016 Sfera Labs Srl
  * 
- *     http://www.hsyco.com/
+ *     http://www.sferalabs.cc/
  * 
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -25,9 +25,10 @@ import org.json.simple.JSONObject;
 public class User extends Type {
 
 	/**
-	 * Constructs a User object from the passed JSON object
+	 * Constructs a User object from the passed JSON object.
 	 * 
 	 * @param obj
+	 *            the JSON object
 	 */
 	public User(JSONObject obj) {
 		super(obj);

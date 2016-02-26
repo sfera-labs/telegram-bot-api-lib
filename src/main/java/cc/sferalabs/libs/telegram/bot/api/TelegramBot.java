@@ -18,9 +18,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.util.List;
@@ -150,8 +152,10 @@ public class TelegramBot {
 	 * @param request
 	 * @return
 	 * @throws MalformedURLException
+	 * @throws UnsupportedEncodingException
 	 */
-	private URL buildUrl(Request request) throws MalformedURLException {
+	private URL buildUrl(Request request)
+			throws MalformedURLException, UnsupportedEncodingException {
 		StringBuilder urlString = new StringBuilder(baseUrl + request.getMethodName());
 		Map<String, String> params = request.getParameters();
 		if (params != null && !params.isEmpty()) {
@@ -160,7 +164,7 @@ public class TelegramBot {
 				urlString.append(sep);
 				urlString.append(param.getKey());
 				urlString.append('=');
-				urlString.append(param.getValue());
+				urlString.append(URLEncoder.encode(param.getValue(), "UTF-8"));
 				sep = '&';
 			}
 		}

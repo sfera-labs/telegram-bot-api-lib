@@ -194,7 +194,7 @@ public class TelegramBot {
 	public List<Update> pollUpdates(Integer offset, Integer limit, Integer timeout)
 			throws IOException, ParseException, ResponseError {
 		JSONArray updates = sendRequest(new GetUpdatesRequest(offset, limit, timeout),
-				timeout * 1000 + 5000);
+				timeout == null ? 5000 : timeout * 1000 + 5000);
 		return (List<Update>) updates.stream().map(u -> new Update((JSONObject) u))
 				.collect(Collectors.toList());
 	}

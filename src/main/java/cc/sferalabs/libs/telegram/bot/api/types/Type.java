@@ -53,8 +53,8 @@ public abstract class Type {
 	 *            the field name
 	 * @return the value of the specified filed as int
 	 */
-	public int getInt(String field) {
-		return (int) (long) get(field);
+	public long getInt(String field) {
+		return (long) get(field);
 	}
 
 	/**

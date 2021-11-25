@@ -36,7 +36,7 @@ public class Update extends Type {
 	/**
 	 * @return the updateId
 	 */
-	public int getUpdateId() {
+	public long getUpdateId() {
 		return getInt("update_id");
 	}
 

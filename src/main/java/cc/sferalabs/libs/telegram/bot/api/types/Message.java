@@ -36,7 +36,7 @@ public class Message extends Type {
 	/**
 	 * @return the message id
 	 */
-	public int getMessageId() {
+	public long getMessageId() {
 		return getInt("message_id");
 	}
 
@@ -50,7 +50,7 @@ public class Message extends Type {
 	/**
 	 * @return the date the message was sent in Unix time
 	 */
-	public int getDate() {
+	public long getDate() {
 		return getInt("date");
 	}
 

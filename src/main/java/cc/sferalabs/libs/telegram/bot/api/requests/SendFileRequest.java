@@ -44,8 +44,8 @@ public abstract class SendFileRequest extends Request {
 	 * @param replyMarkup
 	 *            the reply_markup parameter
 	 */
-	public SendFileRequest(String methodName, int chatId, Path path, String parameter,
-			Integer replyToMessageId, ReplyMarkup replyMarkup) {
+	public SendFileRequest(String methodName, long chatId, Path path, String parameter,
+			Long replyToMessageId, ReplyMarkup replyMarkup) {
 		super(methodName);
 		addParameter("chat_id", chatId);
 		this.path = path;

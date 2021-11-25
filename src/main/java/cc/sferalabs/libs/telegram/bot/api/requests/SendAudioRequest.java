@@ -42,8 +42,8 @@ public class SendAudioRequest extends SendFileRequest {
 	 * @param replyMarkup
 	 *            the reply_markup parameter
 	 */
-	public SendAudioRequest(int chatId, Path path, Integer duration, String performer, String title,
-			Integer replyToMessageId, ReplyMarkup replyMarkup) {
+	public SendAudioRequest(long chatId, Path path, Integer duration, String performer, String title,
+			Long replyToMessageId, ReplyMarkup replyMarkup) {
 		super("sendAudio", chatId, path, "audio", replyToMessageId, replyMarkup);
 		addParameter("duration", duration);
 		addParameter("performer", performer);

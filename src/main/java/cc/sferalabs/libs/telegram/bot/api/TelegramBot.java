@@ -191,7 +191,7 @@ public class TelegramBot {
 	 *             if an I/O exception occurs
 	 */
 	@SuppressWarnings("unchecked")
-	public List<Update> pollUpdates(Integer offset, Integer limit, Integer timeout)
+	public List<Update> pollUpdates(Long offset, Integer limit, Integer timeout)
 			throws IOException, ParseException, ResponseError {
 		JSONArray updates = sendRequest(new GetUpdatesRequest(offset, limit, timeout),
 				timeout == null ? 5000 : timeout * 1000 + 5000);

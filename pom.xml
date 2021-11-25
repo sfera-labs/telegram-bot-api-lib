@@ -4,7 +4,7 @@
 
 	<groupId>cc.sferalabs.libs</groupId>
 	<artifactId>telegram-bot</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 
 	<name>Telegram Bot</name>
 	<description>Simple library implementing the Telegram Bot API (https://core.telegram.org/)</description>

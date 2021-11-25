@@ -39,8 +39,8 @@ public class SendMessageRequest extends Request {
 	 * @param replyMarkup
 	 *            the reply_markup parameter
 	 */
-	public SendMessageRequest(int chatId, String text, String parseMode,
-			Boolean disableWebPagePreview, Integer replyToMessageId, ReplyMarkup replyMarkup) {
+	public SendMessageRequest(long chatId, String text, String parseMode,
+			Boolean disableWebPagePreview, Long replyToMessageId, ReplyMarkup replyMarkup) {
 		super("sendMessage");
 		addParameter("chat_id", chatId);
 		addParameter("text", text);

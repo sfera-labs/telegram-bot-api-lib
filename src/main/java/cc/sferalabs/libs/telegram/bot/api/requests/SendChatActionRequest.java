@@ -38,7 +38,7 @@ public class SendChatActionRequest extends Request {
 	 * @param action
 	 *            the action parameter
 	 */
-	public SendChatActionRequest(int chatId, String action) {
+	public SendChatActionRequest(long chatId, String action) {
 		super("sendChatAction");
 		addParameter("chat_id", chatId);
 		addParameter("action", action);

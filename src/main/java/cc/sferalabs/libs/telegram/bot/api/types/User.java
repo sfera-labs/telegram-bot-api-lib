@@ -37,7 +37,7 @@ public class User extends Type {
 	/**
 	 * @return the user id
 	 */
-	public int getId() {
+	public long getId() {
 		return getInt("id");
 	}
 

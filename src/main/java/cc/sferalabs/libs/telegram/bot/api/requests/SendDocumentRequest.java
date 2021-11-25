@@ -37,7 +37,7 @@ public class SendDocumentRequest extends SendFileRequest {
 	 * @param replyMarkup
 	 *            the reply_markup parameter
 	 */
-	public SendDocumentRequest(int chatId, Path path, Integer replyToMessageId,
+	public SendDocumentRequest(long chatId, Path path, Long replyToMessageId,
 			ReplyMarkup replyMarkup) {
 		super("sendDocument", chatId, path, "document", replyToMessageId, replyMarkup);
 	}

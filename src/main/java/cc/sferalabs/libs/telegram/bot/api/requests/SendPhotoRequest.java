@@ -38,7 +38,7 @@ public class SendPhotoRequest extends SendFileRequest {
 	 * @param replyMarkup
 	 *            the reply_markup parameter
 	 */
-	public SendPhotoRequest(int chatId, Path path, String caption, Integer replyToMessageId,
+	public SendPhotoRequest(long chatId, Path path, String caption, Long replyToMessageId,
 			ReplyMarkup replyMarkup) {
 		super("sendPhoto", chatId, path, "photo", replyToMessageId, replyMarkup);
 		addParameter("caption", caption);

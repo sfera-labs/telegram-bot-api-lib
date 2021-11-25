@@ -31,7 +31,7 @@ public class GetUpdatesRequest extends Request {
 	 * @param timeout
 	 *            the timeout parameter
 	 */
-	public GetUpdatesRequest(Integer offset, Integer limit, Integer timeout) {
+	public GetUpdatesRequest(Long offset, Integer limit, Integer timeout) {
 		super("getUpdates");
 		addParameter("offset", offset);
 		addParameter("limit", limit);
